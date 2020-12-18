@@ -1,0 +1,12 @@
+%h1 Book Guide
+%p ~今年読んだおすすめの本を紹介しています~
+%hr
+
+  .main
+  - @books.each_with_index do |book, index|
+    #{index + 1}.
+    =link_to book.name, book_path(book.id)
+    %br
+
+  %hr
+  =link_to "新しい本を登録する", new_book_path

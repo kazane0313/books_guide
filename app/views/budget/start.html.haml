@@ -1,0 +1,14 @@
+%div.home.big-bg
+  %div.page-header.wrapper
+    %h1
+      =link_to image_tag("logo.png", class: "logo"),books_path
+    %ul
+      .main-nav
+        %li
+          =link_to "BOOKLIST", books_path
+        %li
+          =link_to "NEWBOOK", new_book_path
+
+  %div
+    .home-content.wrapper
+      =link_to "BOOK LISTを見る", books_path, class: 'button'

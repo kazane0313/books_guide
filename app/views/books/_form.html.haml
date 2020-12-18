@@ -1,0 +1,7 @@
+=bootstrap_form_with model: @book, local: true do |f|
+  =f.text_field :name, placeholder: "name"
+  =f.text_field :author, placeholder: "author"
+  .form-group
+    =f.label "price"
+    =f.text_field_without_bootstrap :telephone, placeholder: "price", class: "form-control"
+  =f.submit

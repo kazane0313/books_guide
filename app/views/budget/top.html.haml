@@ -1,0 +1,12 @@
+%h2 予算シュミレーター
+%p ＼３冊以上お買い上げの場合は、30% OFFになります！／
+%form{:action => "result", :method => "post"}
+  %p
+    本の冊数　
+    %input{:name => "books", :size => "40", :type => "text"}>/
+    冊
+  %p
+    １冊あたりの値段　
+    %input{:name => "price", :size => "40", :type => "text"}>/
+    円
+  %input{:type => "submit", :value => "計算する"}/

@@ -1,0 +1,11 @@
+.books
+  %p 本の名前：#{@book.name}
+  %p 著者名：#{@book.author}
+  %p 値段：#{@book.price}円（税込#{@book.price_with_tax}円）
+
+%hr
+=link_to '一覧へ戻る',books_path
+%br
+=link_to "登録内容を編集する", edit_book_path(@book)
+%br
+=link_to "登録内容を削除する", book_path(@book), method: :delete, data: {confirm: "削除しますか？"}
